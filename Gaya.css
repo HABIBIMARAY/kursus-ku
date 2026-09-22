@@ -1,0 +1,458 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* =========================
+   HEADER / NAVBAR
+========================= */
+header {
+    background: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+nav a:first-child {
+    margin-right: auto;
+    color: white;
+    font-size: 23px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* =========================
+   MAIN
+========================= */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #0f172a;
+}
+
+/* =========================
+   HERO
+========================= */
+#hero {
+    min-height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 100px 60px;
+
+    border-radius: 0 0 30px 30px;
+
+    background:
+        linear-gradient(135deg,
+            rgba(15, 23, 42, 0.96),
+            rgba(14, 116, 144, 0.90));
+
+    color: white;
+}
+
+#hero h1 {
+    max-width: 750px;
+    font-size: 52px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    max-width: 650px;
+    font-size: 19px;
+    color: #dbeafe;
+    margin-bottom: 30px;
+}
+
+#hero a {
+    width: fit-content;
+
+    background: #38bdf8;
+    color: #082f49;
+
+    padding: 14px 25px;
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+#hero a:hover {
+    background: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   KEUNGGULAN
+========================= */
+#keunggulan {
+    text-align: center;
+}
+
+#keunggulan article {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 31%;
+    min-height: 190px;
+
+    margin: 1%;
+
+    padding: 30px 25px;
+
+    background: white;
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+
+    transition: 0.3s;
+}
+
+#keunggulan article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.15);
+}
+
+#keunggulan h3 {
+    color: #0284c7;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+#keunggulan p {
+    color: #64748b;
+}
+
+/* =========================
+   KATALOG
+========================= */
+#katalog {
+    background: #eef6ff;
+    padding: 80px 25px;
+    border-radius: 25px;
+}
+
+#katalog article {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 31%;
+    min-height: 230px;
+
+    margin: 1%;
+
+    padding: 30px;
+
+    background: white;
+    border-radius: 18px;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.07);
+
+    transition: 0.3s;
+}
+
+#katalog article:hover {
+    transform: translateY(-7px);
+    border-color: #38bdf8;
+}
+
+#katalog h3 {
+    font-size: 23px;
+    color: #0f766e;
+    margin-bottom: 15px;
+}
+
+#katalog p {
+    color: #64748b;
+}
+
+/* =========================
+   CARA MENDAFTAR
+========================= */
+#alur {
+    max-width: 850px;
+    margin: auto;
+}
+
+#alur ol {
+    background: white;
+    padding: 35px 50px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+
+    counter-reset: daftar;
+}
+
+#alur li {
+    list-style: none;
+    position: relative;
+
+    padding: 18px 20px 18px 55px;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+#alur li:last-child {
+    border-bottom: none;
+}
+
+#alur li::before {
+    counter-increment: daftar;
+    content: counter(daftar);
+
+    position: absolute;
+    left: 0;
+    top: 12px;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #0284c7;
+    color: white;
+
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* =========================
+   MEDIA
+========================= */
+#media {
+    text-align: center;
+}
+
+#media img,
+#media video {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+
+    display: block;
+    margin: 20px auto;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+}
+
+#media h3 {
+    margin-top: 35px;
+    font-size: 23px;
+}
+
+#media p {
+    margin-top: 20px;
+}
+
+#media a {
+    display: inline-block;
+
+    padding: 11px 20px;
+
+    background: #0f172a;
+    color: white;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+#media a:hover {
+    background: #0284c7;
+}
+
+/* =========================
+   KONTAK
+========================= */
+#kontak {
+    background: white;
+    border-radius: 25px;
+    padding: 60px;
+
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+#kontak p {
+    max-width: 600px;
+    margin: 12px auto;
+    padding: 15px 20px;
+
+    background: #f8fafc;
+    border-radius: 10px;
+
+    color: #475569;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    margin-top: 50px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background: #0f172a;
+    color: #cbd5e1;
+}
+
+footer small {
+    font-size: 14px;
+}
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+@media (max-width: 900px) {
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    nav a:first-child {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    #hero {
+        padding: 80px 35px;
+    }
+
+    #hero h1 {
+        font-size: 42px;
+    }
+
+    #keunggulan article,
+    #katalog article {
+        width: 46%;
+    }
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+@media (max-width: 600px) {
+
+    main {
+        padding: 0 15px;
+    }
+
+    nav {
+        padding: 15px;
+        justify-content: center;
+    }
+
+    nav a:first-child {
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    #hero {
+        min-height: 500px;
+        padding: 60px 25px;
+    }
+
+    #hero h1 {
+        font-size: 34px;
+    }
+
+    #hero p {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    section h2 {
+        font-size: 27px;
+    }
+
+    #keunggulan article,
+    #katalog article {
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    #alur ol {
+        padding: 25px 20px;
+    }
+
+    #alur li {
+        padding-left: 50px;
+    }
+
+    #kontak {
+        padding: 40px 20px;
+    }
+}
