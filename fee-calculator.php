@@ -931,7 +931,12 @@ $year = date('Y');
     ===================================================== -->
 
     <main class="container">
-
+        <div class="type-proof">
+            <strong>Bukti Tipe Data:</strong>
+            <span>Variabel $isActive</span>
+            <code><?php var_dump($isActive); ?></code>
+            <small>Tipe data: Boolean</small>
+        </div>
 
         <!-- PAGE HEADER -->
 
