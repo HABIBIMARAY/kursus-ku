@@ -1,28 +1,8 @@
 <?php
 
 declare(strict_types=1);
-
-/*
-|--------------------------------------------------------------------------
-| KURSUSKU - HALAMAN UTAMA
-|--------------------------------------------------------------------------
-| Halaman ini berisi:
-| 1. Navbar
-| 2. Hero
-| 3. Keunggulan
-| 4. Katalog
-| 5. Cara daftar
-| 6. Media
-| 7. Status kursus
-| 8. Kontak
-| 9. Footer
-|--------------------------------------------------------------------------
-*/
-
 $siteName = 'KursusKu';
-
 $tagline = 'Belajar, daftar, dan kelola kursus dalam satu tempat.';
-
 $year = date('Y');
 
 
@@ -215,9 +195,7 @@ function eIndex(mixed $value): string
                     Keunggulan
                 </a>
 
-                <a href="#katalog">
-                    Katalog
-                </a>
+                <a href="#katalog">Katalog </a>
 
                 <a href="#alur">
                     Cara Daftar
@@ -274,10 +252,7 @@ function eIndex(mixed $value): string
                     <div class="hero-buttons">
 
                         <a
-                            href="#katalog"
-                            class="btn-primary">
-                            Lihat Katalog Kursus
-                        </a>
+                            href="#katalog" class="btn-primary">Lihat Katalog Kursus</a>
 
                         <a
                             href="registration.php"
@@ -696,7 +671,7 @@ function eIndex(mixed $value): string
                             class="media-video">
 
                             <source
-                                src="assets/mp4/sandikagalih.mp4"
+                                src="assets/video/introkursus.mp4"
                                 type="video/mp4">
 
                             Browser Anda tidak mendukung
